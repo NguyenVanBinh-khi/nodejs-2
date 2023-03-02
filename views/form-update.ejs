@@ -1,0 +1,41 @@
+<h1>Sửa Lớp</h1>
+
+<style>
+  .input {
+    display: block;
+    margin: 12px 0;
+  }
+</style>
+
+<form action="/update" method="POST">
+  ID: <input class="input" type="text" name="id" value="<%= sinhvien.id %>" />
+  ma Sinh Vien :
+  <input
+    class="input"
+    type="text"
+    name="maSinhVien"
+    value="<%= sinhvien.maSinhVien %>"
+  />
+  ngay Sinh :
+  <input
+    class="input"
+    type="text"
+    name="ngaySinh"
+    value="<%= sinhvien.ngaySinh  %>"
+  />
+  Gioi Tinh :
+  <input
+    class="input"
+    type="text"
+    name="gioiTinh"
+    value="<%= sinhvien.gioiTinh %>"
+  />
+  que Quan :
+  <input
+    class="input"
+    type="text"
+    name="queQuan"
+    value="<%= sinhvien.queQuan  %>"
+  />
+  <button type="submit">Sửa Môn Học</button>
+</form>
